@@ -9,6 +9,10 @@
     <title>Lavine & Bar's Wedding</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 40px;
@@ -60,7 +64,8 @@
             left: 0;
             margin: 40px;
             transform: rotate(180deg);
-            height: 50vh;
+            max-height: 50vh;
+            max-width: 50vw;
         }
 
         .bottom-right-flowers {
@@ -69,7 +74,12 @@
             bottom: 0;
             right: 0;
             margin: 40px;
-            height: 50vh;
+            max-height: 50vh;
+            max-width: 50vw;
+        }
+        video {
+            max-height: 90vh;
+            max-width: -webkit-fill-available;
         }
 
     </style>
