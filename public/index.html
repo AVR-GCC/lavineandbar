@@ -9,16 +9,23 @@
     <title>Lavine & Bar's Wedding</title>
     <style>
         body {
+            background-color: #333;
+            position: absolute;
+            width: 97vw;
+        }
+        .top {
+            margin: 40px;
+            border: 5px solid #af893f;
+            width: calc(97vw - 90px);
+        }
+        .content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: 'Arial', sans-serif;
             text-align: center;
-            margin: 40px;
-            background-color: #333;
             color: #af893f;
-            border: 5px solid #af893f;
             border-radius: 5px;
             padding-bottom: 50px;
         }
@@ -35,6 +42,14 @@
             font-weight: 400;
             font-style: normal;
             text-shadow: 2px 2px #222;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+            }
+            p {
+                font-size: 5vw;
+            }
         }
         .date, .venue {
             font-weight: bold;
@@ -85,25 +100,29 @@
     </style>
 </head>
     <body>
-    <img class="top-left-flowers" src="pic.png" alt="Description of image">
-    <img class="bottom-right-flowers" src="pic.png" alt="Description of image">
-    
+        <div class="top">
+            <div class="content">
+                <img class="top-left-flowers" src="pic.png" alt="Description of image">
+                <img class="bottom-right-flowers" src="pic.png" alt="Description of image">
+                
 
-    <h1 class="great-vibes-regular">Lavine & Bar</h1>
-    <p>Request the pleasure of your company at their virtual wedding</p>
+                <h1 class="great-vibes-regular">Lavine & Bar</h1>
+                <p>Request the pleasure of your company at their virtual wedding</p>
 
-    <p>Saturday, March 2nd, 2024</p>
+                <p>Saturday, March 2nd, 2024</p>
 
-    <p>1 PM ISR</p>
+                <p>1 PM ISR</p>
 
-    <p>2 PM KE</p>
-    <p>Sandy beach Non Nuoc Resort</p>
+                <p>2 PM KE</p>
+                <p>Sandy beach Non Nuoc Resort</p>
 
-    <video autoplay muted loop>
-        <source src="Black & Gold Minimalist Wedding Day Wedding Card.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div style="height: 20px;"></div>
-    <a href="https://app.courtly.com/conference/laura-felix">Join</a>
-</body>
+                <video autoplay muted loop>
+                    <source src="Black & Gold Minimalist Wedding Day Wedding Card.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div style="height: 20px;"></div>
+                <a href="https://app.courtly.com/conference/laura-felix">Join</a>
+            </div>
+        </div>
+    </body>
 </html>
