@@ -43,14 +43,6 @@
             font-style: normal;
             text-shadow: 2px 2px #222;
         }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 10vw;
-            }
-            p {
-                font-size: 5vw;
-            }
-        }
         .date, .venue {
             font-weight: bold;
         }
@@ -83,6 +75,18 @@
             max-width: 50vw;
         }
 
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+            }
+            p {
+                font-size: 5vw;
+                margin: 1.5vw;
+            }
+            .top-left-flowers {
+                opacity: 0;
+            }
+        }
         .bottom-right-flowers {
             mix-blend-mode: lighten;
             position: absolute;
